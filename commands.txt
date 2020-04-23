@@ -1,0 +1,8 @@
+#start
+sudo nginx -t -c $(pwd)/myconfig.conf -g "pid /var/run/nginx.pid; worker_processes 2;"
+
+#stop
+sudo nginx -s stop
+
+#reload
+sudo nginx -s reload
