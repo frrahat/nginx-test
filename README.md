@@ -4,12 +4,17 @@
 sudo nginx -t -c $(pwd)/myconfig.conf -g "pid /var/run/nginx.pid; worker_processes 2;"
 ```
 
+### Install WSGI app Requirements
+```
+pip install werkzeug
+```
+
 ### Start wsgi app
 ```
 python app.py
 ```
 
-### Controling
+### Controlling
 ```bash
 # stop nginx
 sudo nginx -s stop
