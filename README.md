@@ -14,6 +14,11 @@ pip install werkzeug
 python app.py
 ```
 
+### Samlple request
+```
+curl -i -H "x-reQuESt-Id: " localhost/foo
+```
+
 ### Controlling
 ```bash
 # stop nginx
